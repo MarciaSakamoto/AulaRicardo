@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - Contato </title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <!-- criando menu-->
+    <table border="0" width="100%">
+        <tr>
+            <td align=center><a href="../html/index.html"><img src="../imagens/logo.png" width="140" height="30"></a> </td>
+            <td align="align">QUEM SOMOS</td>
+            <td align="right">PARA PESSOAS</td>
+            <td align="right">PARA EMPRESAS</td>
+            <td align="right"><a href="../html/contato.html">CONTATO</a> </td>
+            <td align="right">CONTEUDOS</td>
+        </tr>
+    </table>
+    <br>
+    <form id="contato" method="POST">
+        <fieldset>
+            <legend><b>PREENCHA OS DADOS ABAIXO PARA MATRICULAR-SE NO CURSO GAMA ACADEMY</b></legend>
+            <label>Nome:</label> <input type="text" name="nome_cliente" class="campo_nome" required><br><br>
+            <label>Email:</label> <input type="email" name="email_cliente" class="campo_email" required><br><br>
+            <label>Senha:</label> <input type="password" name="senha_cliente" required> <br><br>
+            <label>Genero</label>
+            <input type="radio" name="genero_cliente" value="feminino" required>Feminino
+            <input type="radio" name="genero_cliente" value="masculino" required>Masculino
+            <input type="radio" name="genero_cliente" value="outros" required>Outros
+            <input type="radio" name="genero_cliente" value="não informado" required>Não Informado<br><br>
+            <label>Escolha o curso que deseja fazer</label>
+            <select required>
+                <option name="Curso_cliente" value="HTML">HTML</option>
+                <option name="Curso_cliente" value="CSS">CSS</option>
+                <option name="Curso_cliente" value="XML">XML</option>
+                <option name="Curso_cliente" value="JavaScript">JavaScript</option>
+            </select><br><br>
+            <label>Escolha qual periodo deseja cursar</label>
+            <input type="checkbox" name="periodo_curso" value="manhã">Manhã
+            <input type="checkbox" name="periodo_curso" value="tarde">Tarde
+            <input type="checkbox" name="periodo_curso" value="noite">Noite <br><br>
+            <label>Informe a data para realização do curso</label>
+            <input type="date" name="data_curso"><br><br>
+            <label>Mensagem</label><br>
+            <textarea cols="35" rows="3" name="mensagem_cliente" maxlength="10"></textarea> <br> <br>
+
+            <label>Para finalizar a sua inscrição, anexe um comprovante de residencia</label>
+            <input type="file" name="arquivo_cliente" required><br><br>
+
+
+            <input type="submit" value="Enviar">
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

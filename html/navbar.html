@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - Contato</title>
+
+    <!-- Chamada da biblioteca de estilos CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+
+</head>
+
+<body>
+    <!-- Criando um menu na nossa página-->
+    <table border="0" width="100%" class="menu">
+        <!--Criando uma linha -->
+        <tr>
+            <!-- Criar 6 colunas para as opções do menu-->
+            <td align="center"><a href="../html/index.html"> <img src="../imagens/logo.png" width="140" height="30"> </a></td>
+            <td align="right">QUEM SOMOS</td>
+            <td align="right">PARA PESSOAS</td>
+            <td align="right">PARA EMPRESAS</td>
+            <td align="right">CONTATO</td>
+            <td align="right">CONTEÚDOS</td>
+        </tr>
+    </table>
+    <br>
+    <!-- Construtindo o nosso formulário -->
+    <form id="contato" method="POST">
+        <!-- Criando uma caixa de container para guardar os campos do formulário-->
+        <fieldset>
+            <!-- Título do nosso formulário-->
+            <legend><b>Preencha os dados abaixo para fazer os cursos da Gama Academy</b></legend>
+            <label>Nome:</label> <input type="text" name="nome_cliente" class="campo_nome" required><br><br>
+            <label>Email:</label> <input type="email" name="email_cliente" class="campo_email" required><br><br>
+            <label>Senha:</label> <input type="password" name="senha_cliente" required><br><br>
+            <label>Genero:</label>
+            <input type="radio" name="genero_cliente" value="feminino" required>Feminino
+            <input type="radio" name="genero_cliente" value="masculino" required>Masculino
+            <input type="radio" name="genero_cliente" value="outros" required>Outros
+            <input type="radio" name="genero_cliente" value="não informado" required>Não Informado<br><br>
+            <!-- Criando uma caixa de listagem dropdown-->
+            <label>Escolha o curso de deseja fazer:</label>
+            <select required>
+                <option name="curso_cliente" value="Não Escolhida"></option>
+                <option name="curso_cliente" value="HTML">HTML</option>
+                <option name="curso_cliente" value="CSS">CSS</option>
+                <option name="curso_cliente" value="XML">XML</option>
+                <option name="curso_cliente" value="JS">JavaScript</option>
+            </select><br><br>
+            <!-- Criando um campo do tipo check box-->
+            <label>Escolha qujal, período desejada cursar</label>
+            <input type="checkbox" name="periodo_curso" value="manhã">Manhã
+            <input type="checkbox" name="periodo_curso" value="tarde">Tarde
+            <input type="checkbox" name="periodo_curso" value="noite">Noite<br><br>
+
+            <!-- Criando um componente de data para o formulário-->
+            <label>Informe a data para a realização do curso</label>
+            <input type="date" name="data_curso"><br><br>
+            
+            <!-- Criando uma caixa de mensagem-->
+            <!-- atributo maxlength, permite limitar a quantidade de caracteres-->
+            <label>Mensagem</label><br>
+            <textarea cols="35" rows="3" name="mensagem_cliente" maxlength="300"></textarea><br><br>
+
+            <!--Criando campo para fazer o upload do arquivo-->
+            <label>Para finalizar a sua inscrição, anexar um comprovante de residência:</label>
+            <input type="file" name="arquivo_cliente" required><br><br>
+
+            <!-- Criando um botão para envio dos dados -->
+            <input type="submit" value="Enviar">
+
+
+
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>

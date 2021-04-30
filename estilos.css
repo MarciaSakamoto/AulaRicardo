@@ -1,0 +1,33 @@
+ /* Criando estilos para os comandos nativos do HTML */
+ p{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:blueviolet;  
+  }
+
+  h1{
+      font-size: 26px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bolder;
+      color:rgb(83, 7, 7);
+  }
+
+  body{
+      background-color: rgb(251, 250, 168);
+  }
+
+  /* Criando uma classe de estilos no CSS */
+
+  .frase_dif{
+      font-size: 12px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color:darkgrey;
+  }
+
+  .menu{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-weight: bolder;
+      color:rgb(4, 4, 95);
+  }
+  
